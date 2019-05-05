@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/registerUsername"
+            android:hint="Enter Username" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/registerPassword"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:layout_below="@+id/registerUsername"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/registerEmail"
+            android:hint="Enter Email"
+            android:layout_below="@+id/registerPassword"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Buttonlogin"
+            android:layout_below="@+id/registerEmail"
+            android:text="Login"
+            android:layout_centerHorizontal="true"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Buttonregister"
+            android:layout_below="@+id/Buttonlogin"
+            android:text="Register"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

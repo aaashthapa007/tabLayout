@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity"
+    android:background="#F0F1ED"
+    android:padding="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#BFC0BB"
+        android:hint="Enter Item Name"
+        android:paddingLeft="10dp"
+        android:id="@+id/et_item_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#BFC0BB"
+        android:hint="Enter Item Price"
+        android:paddingLeft="10dp"
+        android:id="@+id/et_item_price"
+        android:layout_below="@id/et_item_name"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#BFC0BB"
+        android:hint="Enter Item Image Name"
+        android:paddingLeft="10dp"
+        android:id="@+id/et_item_image_name"
+        android:layout_below="@id/et_item_price"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#BFC0BB"
+        android:hint="Enter Item Description"
+        android:paddingLeft="10dp"
+        android:id="@+id/et_item_description"
+        android:layout_below="@id/et_item_image_name"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_item_submit"
+        android:layout_below="@id/et_item_description"
+        android:text="Submit"
+        android:background="#848482"
+        android:layout_marginTop="10dp"
+        android:textColor="#040504"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_item_show"
+        android:layout_below="@id/btn_item_submit"
+        android:text="Show Items"
+        android:background="#848482"
+        android:layout_marginTop="10dp"
+        android:textColor="#040504"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:id="@+id/et_item_show"
+        android:layout_below="@id/btn_item_show"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+</RelativeLayout>
